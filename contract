@@ -1,0 +1,32 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.24;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+/**
+ * @title Andon Token v2 (AND)
+ * @notice 100% Binance, CEX, and audit-compliant version.
+ *         - Fixed supply: 100,000,000 AND (18 decimals)
+ *         - No taxes, no fees, no blacklist, no whitelist, no transfer restriction
+ *         - No pause, no upgrade/proxy, no admin or dev wallet, no mint after deploy
+ *         - No staking, locking, vesting (for these, use external contracts!)
+ *         - Full decentralization: No owner/admin after deployment
+ *         - Anyone can burn their own tokens
+ *         - Built on OpenZeppelin 5.x (security best practice)
+ */
+contract AndonTokenV2 is ERC20 {
+    uint256 private constant _initialSupply = 100_000_000 * 10**18;
+
+    constructor() ERC20("Andon Token", "AND") {
+        _mint(msg.sender, _initialSupply);
+        // No owner, no further mint, no admin functions
+    }
+
+    /**
+     * @notice Burn your own tokens (decreases total supply forever).
+     * @param amount Amount of AND tokens to burn.
+     */
+    function burn(uint256 amount) external {
+        _burn(msg.sender, amount);
+    }
+}
