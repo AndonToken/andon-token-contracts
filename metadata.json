@@ -1,0 +1,38 @@
+{
+  "name": "Andon Token",
+  "symbol": "AND",
+  "decimals": 18,
+  "description": "Andon Token (AND) is a 100% CEX-compliant, decentralized, audit-friendly ERC20 token built on Binance Smart Chain. This is the official and only V2 contract. No tax, no admin, no pause, no blacklist, no mint after deployment, and anyone can burn their own tokens. Maximum security and transparency.",
+  "version": "v2",
+  "chainId": 56,
+  "network": "binance-smart-chain",
+  "address": "0x12ca8cd01e5d099fb089b5d938e30eae98aafaf5",
+  "website": "https://andontoken.com",
+  "whitepaper": "https://andontoken.com/whitepaper.pdf",
+  "explorer": "https://bscscan.com/address/0x12ca8cd01e5d099fb089b5d938e30eae98aafaf5",
+  "status": "active",
+  "tags": [
+    "erc20",
+    "bep20",
+    "cex-compliant",
+    "audit-friendly",
+    "no-tax",
+    "burnable",
+    "no-admin",
+    "decentralized",
+    "andon",
+    "v2"
+  ],
+  "links": {
+    "github": "https://github.com/kullaniciadi/andon-token",
+    "twitter": "https://twitter.com/AndonToken",
+    "telegram": "https://t.me/AndonToken",
+    "medium": "https://medium.com/@AndonToken",
+    "discord": "https://discord.gg/andon",
+    "docs": "https://andontoken.com/docs"
+  },
+  "logoURI": "https://raw.githubusercontent.com/kullaniciadi/andon-token/main/logo.png",
+  "contact": {
+    "email": "info@andontoken.com"
+  }
+}
